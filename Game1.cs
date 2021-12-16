@@ -100,7 +100,7 @@ namespace Part_7_keyboard_and_mouse_inputs
 
             if (pacLocation.Right < 0)
             {
-                pacLocation.X = _graphics.PreferredBackBufferWidth + pacLocation.Width;
+                pacLocation.X = _graphics.PreferredBackBufferWidth;
             }
 
             if (pacLocation.Top > _graphics.PreferredBackBufferHeight)
@@ -110,7 +110,7 @@ namespace Part_7_keyboard_and_mouse_inputs
 
             if (pacLocation.Bottom < 0)
             {
-                pacLocation.Y = _graphics.PreferredBackBufferHeight + pacLocation.Height;
+                pacLocation.Y = _graphics.PreferredBackBufferHeight;
             }
 
             base.Update(gameTime);
